@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+.over_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    margin-block: 50px;
+    flex-direction: column;
+    gap: 20px;
+
+    #todo {
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    #form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        input {
+            width: 320px;
+            height: 40px;
+            border: 2px solid #0071E3;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        button {
+            width: 155px;
+            height: 40px;
+            background: #0071E3;
+            border-radius: 10px;
+            color: white;
+        }
+
+        button:hover {
+            transition: 0.2s all;
+            transform: scale(1.03);
+        }
+
+        button:active {
+            transition: 0.2s all;
+            transform: scale(1.00);
+        }
+    }
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.todo_box {
+    width: 280px;
+    height: 90px;
+    border-radius: 10px;
+    border: 2px solid #0071E3;
+    position: relative;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    background-color: #dadada;
+}
+
+.todo_del {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.todo_del_img {
+    width: 10px;
+    height: 10px;
+}
+
+.todo_title {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.todo_time {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0000008C;
+}
