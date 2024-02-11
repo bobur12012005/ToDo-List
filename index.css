@@ -63,14 +63,21 @@ img {
             transform: scale(1.00);
         }
     }
+
+    .line {
+        width: 1400px;
+        height: 1px;
+        background-color: black;
+        margin-block: 20px;
+    }
 }
 
 .container {
     max-width: 1180px;
     margin: 0 auto;
-    border-top: 1px solid black;
     padding-top: 20px;
     display: flex;
+    border-top: 1px solid black;
     justify-content: start;
     align-items: center;
     gap: 20px;
@@ -121,4 +128,8 @@ img {
     font-size: 14px;
     font-weight: 500;
     color: #0000008C;
+}
+
+.done {
+    text-decoration: line-through red;
 }
